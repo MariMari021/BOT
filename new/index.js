@@ -22,4 +22,18 @@ client.on('messageCreate', (message)=>{
     }
 })
 
+client.on('messageCreate', (message)=>{
+    if(message.author.bot) return
+    if(message.content == "Me recomende uma música."){
+        message.reply("Ouça Payphone - Maroon 5!")
+    }
+})
+
+client.on('messageCreate', (message)=>{
+    if(message.author.bot) return
+    if(message.content == "To cansada"){
+        message.reply("Durma minha querida(o)!")
+    }
+})
+
 client.login(process.env.TOKEN)
